@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>DanChartMaker for Optk</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col">
+		<div class="flex flex-row justify-center h-30">
+			<div class="flex flex-row m-9 items-center">
+				<div class="flex items-center h-10 w-10 rounded-full bg-green-400 text-center p-3 text-lg text-white justify-center" id="1">1</div>
+				<div class="h-[0.1vh] w-[10vw] bg-green-400"></div>
+				<div class="flex items-center h-10 w-10 rounded-full bg-white text-center p-3 text-lg text-green-400 justify-center border border-green-400" id="2">2</div>
+				<div class="h-[0.1vh] w-[10vw] bg-green-400"></div>
+				<div class="flex items-center h-10 w-10 rounded-full bg-white text-center p-3 text-lg text-green-400 justify-center border border-green-400" id="3">3</div>
+				<div class="h-[0.1vh] w-[10vw] bg-green-400"></div>
+				<div class="flex items-center h-10 w-10 rounded-full bg-white text-center p-3 text-lg text-green-400 justify-center border border-green-400" id="4">4</div>
+			</div>
+		</div>
+		<div class="h-max flex items-center flex-col">
+			<div id="text"></div>
+			<input class="hidden mt-5 outline-green-400 rounded form-control border border-solid px-4 py-3 text-sm w-[20rem]" id="input" placeholder="" type="number" min="1" max="9" required>
+			<input type="file" 
+				accept=".tja"
+				id="FileInput" 
+				class="
+					pt-3 hidden
+					text-sm text-grey-500
+					outline-none
+					file:outline-none
+					file:mr-5 file:py-2 file:px-6
+					file:rounded-full file:border-0
+					file:text-sm file:font-medium
+					file:bg-green-100 file:text-green-700
+				">
+			<select id="SelectInput" class="
+				mt-3
+				hidden pt-3
+				form-select appearance-none
+				block
+				w-30
+				px-5
+				py-2
+				text-base
+				font-normal
+				text-gray-700
+				bg-white bg-clip-padding bg-no-repeat
+				border border-solid border-gray-300
+				rounded
+				transition
+				ease-in-out
+				m-0
+				focus:text-gray-700 focus:bg-white focus:border-green-400 focus:outline-none" required>
+			</select>
+			<textarea class="hidden mt-3 w-[60%] h-[60vh] bg-gray-50 text-sm overflow-x-auto p-3 rounded-lg border border-gray-300 focus:outline-green-400 focus:outline-green-400" readonly></textarea> 
+
+		</div>
+		<div class="pt-3 flex justify-end px-[10vw]">
+			<button disabled class="cursor-pointer disabled:cursor-default disabled:bg-gray-300 w-20 h-10 rounded-lg bg-green-500 text-white" id="NextButton">次へ→</button>
+		</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
